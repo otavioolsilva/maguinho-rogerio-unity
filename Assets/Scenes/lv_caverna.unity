@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 410684049}
   - component: {fileID: 410684048}
   m_Layer: 0
-  m_Name: gb_limits
+  m_Name: bg_limits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -625,9 +625,9 @@ EdgeCollider2D:
   m_Points:
   - {x: -1.8599999, y: 0}
   - {x: -1.86, y: 1.8295846}
-  - {x: -1.3527277, y: 1.829585}
-  - {x: -1.0275776, y: 0.07556443}
-  - {x: -0.6893989, y: 0.07556443}
+  - {x: -1.3652579, y: 1.829585}
+  - {x: -0.9924926, y: 0.17860386}
+  - {x: -0.6893989, y: 0.1786039}
   - {x: -0.5592871, y: 0.44219142}
   - {x: -0.19250074, y: 0.4421914}
   - {x: -0.047696512, y: 0.014597466}
@@ -792,7 +792,7 @@ Rigidbody2D:
   m_Mass: 0.7
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 3.2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
