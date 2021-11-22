@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformCollider : MonoBehaviour {
@@ -13,7 +15,7 @@ public class PlatformCollider : MonoBehaviour {
 
     private void Update ()
     {
-        if ((GroundCheck.position.y + 0.08f) > BoxPosition.position.y)
+        if((GroundCheck.position.y + 0.08f) > BoxPosition.position.y && !Input.GetKey("down"))
             BoxCollider.enabled = true;
         else
             BoxCollider.enabled = false;
