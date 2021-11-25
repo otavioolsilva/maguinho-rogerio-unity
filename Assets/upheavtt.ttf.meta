@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2b6df21d4e6285e45ba53338781f4a12
+guid: d0f021c05b8d8ef4dbd74fb69936ddba
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Mario Kart DS
+  - Upheaval TT (BRK)
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

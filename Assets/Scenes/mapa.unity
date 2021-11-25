@@ -383,6 +383,7 @@ GameObject:
   - component: {fileID: 1419306233}
   - component: {fileID: 1419306235}
   - component: {fileID: 1419306234}
+  - component: {fileID: 1419306236}
   m_Layer: 5
   m_Name: Mapa
   m_TagString: Untagged
@@ -451,6 +452,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419306232}
   m_CullTransparentMesh: 1
+--- !u!114 &1419306236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419306232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e672675a0d74e41a5be1c99d5c976f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1673950002
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +545,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1673950005}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1419306236}
+        m_TargetAssemblyTypeName: MapaController, Assembly-CSharp
+        m_MethodName: GetScene_Deserto
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1673950005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,7 +677,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1704705384}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1419306236}
+        m_TargetAssemblyTypeName: MapaController, Assembly-CSharp
+        m_MethodName: GetScene_Caverna
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1704705384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,7 +809,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1761334189}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1419306236}
+        m_TargetAssemblyTypeName: MapaController, Assembly-CSharp
+        m_MethodName: GetScene_Cemiterio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1761334189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -892,7 +941,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2098635772}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1419306236}
+        m_TargetAssemblyTypeName: MapaController, Assembly-CSharp
+        m_MethodName: GetScene_Floresta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2098635772
 MonoBehaviour:
   m_ObjectHideFlags: 0
