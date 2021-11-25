@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/lv_caverna.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/mapa.unity
+    guid: db78a71bcbecda94b81a54de6e9ea920
+  - enabled: 1
     path: Assets/Scenes/lv_deserto.unity
     guid: 10fe704116a767f42b5db0a755e70c79
   - enabled: 1

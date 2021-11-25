@@ -511,6 +511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400065821}
   - component: {fileID: 400065820}
+  - component: {fileID: 400065822}
   m_Layer: 0
   m_Name: flag
   m_TagString: Flag
@@ -518,19 +519,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &400065820
-BoxCollider:
+--- !u!61 &400065820
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400065819}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26551723, y: 4.5227966, z: 1}
-  m_Center: {x: 0.25842905, y: 1.3669538, z: 0}
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!4 &400065821
 Transform:
   m_ObjectHideFlags: 0
@@ -545,6 +559,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &400065822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400065819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b29834ae9afd4246aa87527d65214c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &524775175
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,7 +1242,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474674943}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1474674945
 Camera:
   m_ObjectHideFlags: 0
@@ -1308,7 +1334,7 @@ GameObject:
   - component: {fileID: 1729126469}
   m_Layer: 0
   m_Name: mago
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
