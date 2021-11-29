@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -7,6 +8,18 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private GameObject confirmQuitUI;
     [SerializeField] private Animator anim;
+
+    //Icon images
+    [SerializeField] private Image iconPocao;
+    public bool setIconPocao;
+    [SerializeField] private Image iconGelo;
+    public bool setIconGelo;
+    [SerializeField] private Image iconAreia;
+    public bool setIconAreia;
+    [SerializeField] private Image iconCabelo;
+    public bool setIconCabelo;
+    [SerializeField] private Image iconSeiva;
+    public bool setIconSeiva;
 
     void Start ()
     {
@@ -27,6 +40,13 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
+
+        //Icons
+        iconPocao.enabled = setIconPocao;
+        iconGelo.enabled = setIconGelo;
+        iconAreia.enabled = setIconAreia;
+        iconCabelo.enabled = setIconCabelo;
+        iconSeiva.enabled = setIconSeiva;
     }
 
     public void Resume ()
