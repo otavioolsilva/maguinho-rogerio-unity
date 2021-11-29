@@ -11,15 +11,10 @@ public class PauseMenu : MonoBehaviour
 
     //Icon images
     [SerializeField] private Image iconPocao;
-    public bool setIconPocao;
     [SerializeField] private Image iconGelo;
-    public bool setIconGelo;
     [SerializeField] private Image iconAreia;
-    public bool setIconAreia;
     [SerializeField] private Image iconCabelo;
-    public bool setIconCabelo;
     [SerializeField] private Image iconSeiva;
-    public bool setIconSeiva;
 
     void Start ()
     {
@@ -41,12 +36,7 @@ public class PauseMenu : MonoBehaviour
             }
         }
 
-        //Icons
-        iconPocao.enabled = setIconPocao;
-        iconGelo.enabled = setIconGelo;
-        iconAreia.enabled = setIconAreia;
-        iconCabelo.enabled = setIconCabelo;
-        iconSeiva.enabled = setIconSeiva;
+        ItemIcons();
     }
 
     public void Resume ()
@@ -81,5 +71,24 @@ public class PauseMenu : MonoBehaviour
     public void cancelQuit()
     {
         confirmQuitUI.SetActive(false);
+    }
+
+    //Icons
+    private void ItemIcons ()
+    {
+        if (DataController.item_pocao == true) iconPocao.enabled = true;
+        else iconPocao.enabled = false;
+
+        if (DataController.item_gelo == true) iconGelo.enabled = true;
+        else iconGelo.enabled = false;
+
+        if (DataController.item_areia == true) iconAreia.enabled = true;
+        else iconAreia.enabled = false;
+
+        if (DataController.item_cabelo == true) iconCabelo.enabled = true;
+        else iconCabelo.enabled = false;
+
+        if (DataController.item_seiva == true) iconSeiva.enabled = true;
+        else iconSeiva.enabled = false;
     }
 }
