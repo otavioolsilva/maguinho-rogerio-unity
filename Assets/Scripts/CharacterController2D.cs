@@ -16,6 +16,9 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 velocity = Vector3.zero;
 
+	public Transform fireballPos;
+	public GameObject fireball;
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -34,6 +37,8 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 				m_Grounded = true;
 		}
+
+		Attack();
 	}
 
 
@@ -81,5 +86,13 @@ public class CharacterController2D : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	private void Attack ()
+	{
+		if (Input.GetButton("Fire1"))
+		{
+			Instantiate(fireball, fireballPos.position, fireballPos.rotation);
+		}
 	}
 }
