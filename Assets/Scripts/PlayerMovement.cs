@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour {
         originalSpeed = runSpeed;
     }
 	
-	// Update is called once per frame
 	void Update ()
     {
 
@@ -33,7 +32,6 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate ()
 	{
-		// Move our character
 		controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
 		jump = false;
 	}

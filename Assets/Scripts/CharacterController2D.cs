@@ -24,6 +24,7 @@ public class CharacterController2D : MonoBehaviour
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
+		m_FacingRight = true;
 	}
 
 	private void Update()

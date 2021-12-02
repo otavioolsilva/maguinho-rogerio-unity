@@ -9,7 +9,7 @@ public class Fireball : MonoBehaviour
     void Start ()
     {
         fireballRigidbody = GetComponent<Rigidbody2D>();
-        
+
         if (CharacterController2D.m_FacingRight == false)
             transform.Rotate(0f, 180f, 0f);
 
