@@ -1,23 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Fireball : MonoBehaviour
 {
     public float speed;
-
-    private Rigidbody2D rigidbody;
+    public static bool shoot = false;
+    private Rigidbody2D fireballRigidbody;
 
     void Start ()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
-        rigidbody.velocity = transform.right * speed;
+        fireballRigidbody = GetComponent<Rigidbody2D>();
+        
+        if (CharacterController2D.m_FacingRight == false)
+            transform.Rotate(0f, 180f, 0f);
+
+        fireballRigidbody.velocity = transform.right * speed;
     }
 
     private void OnTriggerEnter2D (Collider2D col)
     {
         if (col.gameObject.tag == "Enemy")
         {
+            Destroy(col.gameObject);
             End();
         }
     }

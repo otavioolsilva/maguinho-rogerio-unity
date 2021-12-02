@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    private static bool IsPaused = false;
+    public static bool IsPaused = false;
 
     [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private GameObject confirmQuitUI;

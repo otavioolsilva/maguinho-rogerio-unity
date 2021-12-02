@@ -721,6 +721,36 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 4663636796473949233, guid: b4357a5de19feec4cb6cf8b4bf752e3f, type: 3}
   m_PrefabInstance: {fileID: 921712110}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1081108627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081108628}
+  m_Layer: 0
+  m_Name: fireballPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1081108628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081108627}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.643, y: -0.022, z: 0}
+  m_LocalScale: {x: 1.4166665, y: 1.4166665, z: 1.4166665}
+  m_Children: []
+  m_Father: {fileID: 2023014977}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1140459424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,6 +1430,7 @@ Transform:
   m_Children:
   - {fileID: 1940266474}
   - {fileID: 1980681758}
+  - {fileID: 1081108628}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1438,6 +1469,8 @@ MonoBehaviour:
     m_Bits: 8
   m_GroundCheck: {fileID: 1980681758}
   m_CeilingCheck: {fileID: 1940266474}
+  fireballPos: {fileID: 1081108628}
+  fireball: {fileID: 6453521462999458689, guid: 91048fe31c6a63c4ba572e328f02e048, type: 3}
 --- !u!95 &2023014980
 Animator:
   serializedVersion: 3

@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterController2D : MonoBehaviour
@@ -13,7 +15,7 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_Grounded;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
-	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+	public static bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 velocity = Vector3.zero;
 
 	public Transform fireballPos;
@@ -24,6 +26,10 @@ public class CharacterController2D : MonoBehaviour
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 	}
 
+	private void Update()
+	{
+		Attack();
+	}
 
 	private void FixedUpdate()
 	{
@@ -37,8 +43,6 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 				m_Grounded = true;
 		}
-
-		Attack();
 	}
 
 
@@ -88,11 +92,20 @@ public class CharacterController2D : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
+	//Fireball
 	private void Attack ()
 	{
-		if (Input.GetButton("Fire1"))
+		if (Input.GetButtonDown("Fire1") && Fireball.shoot == false && PauseMenu.IsPaused == false)
 		{
 			Instantiate(fireball, fireballPos.position, fireballPos.rotation);
+			StartCoroutine(Interval());
 		}
+	}
+
+	IEnumerator Interval()
+	{
+		Fireball.shoot = true;
+		yield return new WaitForSeconds(1f);
+		Fireball.shoot = false;
 	}
 }
