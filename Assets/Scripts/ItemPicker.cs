@@ -1,7 +1,13 @@
+//using System.Collections;
+//using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemPicker : MonoBehaviour
 {
+    public Image notification;
+    private Animator anim_notification;
+
     void Start ()
     {
         //gelo
@@ -27,6 +33,8 @@ public class ItemPicker : MonoBehaviour
         {
             if (DataController.item_seiva == true) Destroy(gameObject);
         }
+
+        anim_notification = notification.GetComponent<Animator>();
     }
 
     void OnTriggerEnter2D (Collider2D col)
@@ -41,10 +49,11 @@ public class ItemPicker : MonoBehaviour
 
             else if (gameObject.name == "item_cabelo")
                 DataController.item_cabelo = true;
-            
+
             else if (gameObject.name == "item_seiva")
                 DataController.item_seiva = true;
 
+            anim_notification.SetTrigger("notify");
             Destroy(gameObject);
         }
     }
