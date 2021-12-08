@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -9,7 +10,9 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
-	[SerializeField] private Transform m_CeilingCheck;							// A position marking where to check for ceilings
+	[SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
+
+	public Animator crossfade;
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
@@ -108,5 +111,15 @@ public class CharacterController2D : MonoBehaviour
 		Fireball.shoot = true;
 		yield return new WaitForSeconds(1f);
 		Fireball.shoot = false;
+	}
+
+	//GameOver
+	public IEnumerator LoadGameOver()
+	{
+		crossfade.SetTrigger("CallStart");
+
+		yield return new WaitForSeconds(1f);
+
+		SceneManager.LoadScene("gameover", LoadSceneMode.Single);
 	}
 }

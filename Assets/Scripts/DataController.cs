@@ -8,4 +8,6 @@ public class DataController : MonoBehaviour
     public static bool item_areia = false;
     public static bool item_cabelo = false;
     public static bool item_seiva = false;
+
+    public static bool life = true;
 }

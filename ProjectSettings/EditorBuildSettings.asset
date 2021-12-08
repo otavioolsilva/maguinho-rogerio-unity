@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/lv_cemiterio.unity
     guid: 550a33ebe26af1d4fa19442fbca1de1e
+  - enabled: 1
+    path: Assets/Scenes/gameover.unity
+    guid: 13a9c5378b74f0441bdc89113d70511f
   m_configObjects: {}

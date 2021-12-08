@@ -1829,7 +1829,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 7dceba4238dde99499f44c8cfed9b74a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2202,6 +2202,7 @@ MonoBehaviour:
     m_Bits: 8
   m_GroundCheck: {fileID: 1980681758}
   m_CeilingCheck: {fileID: 1940266474}
+  crossfade: {fileID: 921712111}
   fireballPos: {fileID: 1081108628}
   fireball: {fileID: 6453521462999458689, guid: 91048fe31c6a63c4ba572e328f02e048, type: 3}
 --- !u!95 &2023014980

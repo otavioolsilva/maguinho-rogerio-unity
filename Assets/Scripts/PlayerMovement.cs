@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour {
 	
 	void Update ()
     {
+        if (DataController.life == false) StartCoroutine(controller.LoadGameOver());
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 

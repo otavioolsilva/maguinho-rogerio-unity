@@ -33,6 +33,7 @@ public class Inimigo : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             Debug.Log("morreu");
+            DataController.life = false;
             Destroy(gameObject);
         }
     }

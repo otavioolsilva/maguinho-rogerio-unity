@@ -1570,6 +1570,7 @@ MonoBehaviour:
     m_Bits: 8
   m_GroundCheck: {fileID: 592592281}
   m_CeilingCheck: {fileID: 1518118081}
+  crossfade: {fileID: 1003973562}
   fireballPos: {fileID: 101060333}
   fireball: {fileID: 6453521462999458689, guid: 91048fe31c6a63c4ba572e328f02e048, type: 3}
 --- !u!50 &775091791
