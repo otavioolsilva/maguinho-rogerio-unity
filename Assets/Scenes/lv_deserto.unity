@@ -947,6 +947,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7093140571707342879, guid: a023c6e7235e8904e8fa481cec2f48da, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7093140571707342945, guid: a023c6e7235e8904e8fa481cec2f48da, type: 3}
       propertyPath: m_Name
       value: Notificacoes
