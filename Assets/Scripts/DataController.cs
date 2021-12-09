@@ -10,4 +10,9 @@ public class DataController : MonoBehaviour
     public static bool item_seiva = false;
 
     public static bool life = true;
+
+    public static int keys = 0;
+    public static bool key_cemiterio = false;
+    public static bool key_deserto = false;
+    public static bool key_floresta = false;
 }
