@@ -8,7 +8,10 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private GameObject confirmQuitUI;
     [SerializeField] private GameObject controlesUI;
+
     [SerializeField] private Animator anim;
+
+    [SerializeField] private Text keys;
 
     //Icon images
     [SerializeField] private Image iconPocao;
@@ -17,14 +20,14 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private Image iconCabelo;
     [SerializeField] private Image iconSeiva;
 
-    void Start ()
+    void Start()
     {
         pauseMenuUI.SetActive(false);
         confirmQuitUI.SetActive(false);
         controlesUI.SetActive(false);
     }
 
-    void Update ()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -38,10 +41,12 @@ public class PauseMenu : MonoBehaviour
             }
         }
 
+        keys.text = "" + DataController.keys;
+
         ItemIcons();
     }
 
-    public void Resume ()
+    public void Resume()
     {
         pauseMenuUI.SetActive(false);
         confirmQuitUI.SetActive(false);
@@ -51,7 +56,7 @@ public class PauseMenu : MonoBehaviour
         anim.enabled = true;
     }
 
-    public void Pause ()
+    public void Pause()
     {
         pauseMenuUI.SetActive(true);
         confirmQuitUI.SetActive(false);
@@ -61,7 +66,7 @@ public class PauseMenu : MonoBehaviour
         anim.enabled = false;
     }
 
-    public void ControlesOpen ()
+    public void ControlesOpen()
     {
         controlesUI.SetActive(true);
     }
@@ -71,12 +76,12 @@ public class PauseMenu : MonoBehaviour
         controlesUI.SetActive(false);
     }
 
-    public void Quit ()
+    public void Quit()
     {
         confirmQuitUI.SetActive(true);
     }
 
-    public void confirmQuit ()
+    public void confirmQuit()
     {
         Application.Quit();
         Debug.Log("quit");

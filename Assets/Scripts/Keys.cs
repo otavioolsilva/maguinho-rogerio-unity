@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class Keys : MonoBehaviour
 {
+    void Start ()
+    {
+        if (gameObject.name == "key_cemiterio")
+            if (DataController.key_cemiterio == true) Destroy(gameObject);
+
+        else if (gameObject.name == "key_deserto")
+            if (DataController.key_deserto == true) Destroy(gameObject);
+
+        else if (gameObject.name == "key_floresta")
+            if (DataController.key_floresta == true) Destroy(gameObject);
+    }
+
     void OnTriggerEnter2D (Collider2D col)
     {
         if (col.gameObject.tag == "Player")
