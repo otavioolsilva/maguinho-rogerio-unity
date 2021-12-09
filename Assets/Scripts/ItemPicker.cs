@@ -53,6 +53,9 @@ public class ItemPicker : MonoBehaviour
             else if (gameObject.name == "item_seiva")
                 DataController.item_seiva = true;
 
+            else if (gameObject.name == "item_pocao")
+                DataController.item_seiva = true;
+
             anim_notification.SetTrigger("notify");
             Destroy(gameObject);
         }

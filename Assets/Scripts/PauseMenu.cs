@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private GameObject confirmQuitUI;
+    [SerializeField] private GameObject controlesUI;
     [SerializeField] private Animator anim;
 
     //Icon images
@@ -20,6 +21,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         confirmQuitUI.SetActive(false);
+        controlesUI.SetActive(false);
     }
 
     void Update ()
@@ -43,6 +45,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         confirmQuitUI.SetActive(false);
+        controlesUI.SetActive(false);
         Time.timeScale = 1f;
         IsPaused = false;
         anim.enabled = true;
@@ -52,9 +55,20 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(true);
         confirmQuitUI.SetActive(false);
+        controlesUI.SetActive(false);
         Time.timeScale = 0f;
         IsPaused = true;
         anim.enabled = false;
+    }
+
+    public void ControlesOpen ()
+    {
+        controlesUI.SetActive(true);
+    }
+
+    public void ControlesClose()
+    {
+        controlesUI.SetActive(false);
     }
 
     public void Quit ()

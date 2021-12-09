@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/menu_inicial.unity
+    guid: 2117f9a99b0251b4bb3a7acf8a737772
+  - enabled: 1
     path: Assets/Scenes/lv_caverna.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
