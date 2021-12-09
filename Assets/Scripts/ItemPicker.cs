@@ -54,7 +54,7 @@ public class ItemPicker : MonoBehaviour
                 DataController.item_seiva = true;
 
             else if (gameObject.name == "item_pocao")
-                DataController.item_seiva = true;
+                DataController.item_pocao = true;
 
             anim_notification.SetTrigger("notify");
             Destroy(gameObject);
