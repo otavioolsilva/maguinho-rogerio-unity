@@ -1113,7 +1113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &713852902
 Animator:
   serializedVersion: 3
@@ -1146,7 +1146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed_inimigo: 4
-  rondaDistancia: 400
+  ronda_esq: 0
+  ronda_dir: 0
 --- !u!50 &713852904
 Rigidbody2D:
   serializedVersion: 4
@@ -1378,7 +1379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &895645476
 Animator:
   serializedVersion: 3
@@ -1411,7 +1412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed_inimigo: 4
-  rondaDistancia: 1400
+  ronda_esq: 0
+  ronda_dir: 0
 --- !u!50 &895645478
 Rigidbody2D:
   serializedVersion: 4
@@ -2271,7 +2273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed_inimigo: 4
-  rondaDistancia: 1000
+  ronda_esq: -4.54
+  ronda_dir: 6.02
 --- !u!50 &1669382516
 Rigidbody2D:
   serializedVersion: 4
@@ -2368,7 +2371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669382513}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 6.33, y: -2.47, z: 0}
+  m_LocalPosition: {x: 6.02, y: -2.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

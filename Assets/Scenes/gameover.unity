@@ -472,6 +472,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4663636796579644243, guid: b4357a5de19feec4cb6cf8b4bf752e3f, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4663636797454971182, guid: b4357a5de19feec4cb6cf8b4bf752e3f, type: 3}
       propertyPath: m_Name
       value: LevelLoader
