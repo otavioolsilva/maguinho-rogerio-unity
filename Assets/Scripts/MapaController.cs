@@ -9,7 +9,10 @@ public class MapaController : MonoBehaviour
 
     public void GetScene_Caverna ()
     {
-        StartCoroutine(LoadLevel("lv_caverna"));
+        if (DataController.item_areia == true && DataController.item_cabelo == true && DataController.item_seiva == true)
+            StartCoroutine(LoadLevel("lv_final"));
+        else
+            StartCoroutine(LoadLevel("lv_caverna"));
     }
 
     public void GetScene_Deserto ()

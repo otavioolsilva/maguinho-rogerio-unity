@@ -10,24 +10,17 @@ public class Flag : MonoBehaviour
     void OnTriggerEnter2D (Collider2D col)
     {
         if (col.gameObject.tag == "Player") {
-            if (DataController.item_areia == true && DataController.item_cabelo == true && DataController.item_seiva == true)
-            {
-                StartCoroutine(LoadMap("lv_final"));
-            }
-            else
-            {
-                StartCoroutine(LoadMap("mapa"));
-                Debug.Log("call map");
-            }
+            StartCoroutine(LoadMap());
+            Debug.Log("call map");
         }
     }
 
-    IEnumerator LoadMap (string levelName)
+    IEnumerator LoadMap ()
     {
         crossfade.SetTrigger("CallStart");
 
         yield return new WaitForSeconds(1f);
 
-        SceneManager.LoadScene(levelName, LoadSceneMode.Single);
+        SceneManager.LoadScene("mapa", LoadSceneMode.Single);
     }
 }

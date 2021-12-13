@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: ec4877521773dcf409565c455721235e
+guid: 08b4a5ac14791054bb04c0e7dc520588
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5310827590228783293
-    second: magofall_0
+      213: -3359525199354403165
+    second: mago_fall_0
   - first:
-      213: -6378076736128518528
-    second: magofall_1
+      213: -9066164990388441731
+    second: mago_fall_1
   - first:
-      213: -1112542601841926666
-    second: magofall_2
+      213: -5941683410705998070
+    second: mago_fall_2
   - first:
-      213: 2315745592372092821
-    second: magofall_3
+      213: 7799277427463053373
+    second: mago_fall_3
   - first:
-      213: -5419157486794856145
-    second: magofall_4
+      213: -5840551781629175237
+    second: mago_fall_4
   - first:
-      213: 3986558022864406833
-    second: magofall_5
+      213: 4039794835964234941
+    second: mago_fall_5
   - first:
-      213: -3098221411603801218
-    second: magofall_6
+      213: -5119177080296759259
+    second: mago_fall_6
   - first:
-      213: -6329179320543667383
-    second: magofall_7
+      213: 8032462700638848849
+    second: mago_fall_7
   - first:
-      213: 2568167502506233244
-    second: magofall_8
+      213: 7347716775019399315
+    second: mago_fall_8
   - first:
-      213: 7154495511097261516
-    second: magofall_9
+      213: -4484536330229596463
+    second: mago_fall_9
   - first:
-      213: -1871828811812590023
-    second: magofall_10
+      213: 9153232244272035867
+    second: mago_fall_10
   - first:
-      213: 4887797474992626693
-    second: magofall_11
+      213: -7589557684980960406
+    second: mago_fall_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -82,7 +82,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,7 +127,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: magofall_0
+      name: mago_fall_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34fc115d1762c46b0800000000000000
-      internalID: -5310827590228783293
+      spriteID: 3a6e18671a19061d0800000000000000
+      internalID: -3359525199354403165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magofall_1
+      name: mago_fall_1
       rect:
         serializedVersion: 2
         x: 64
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08670e040058c77a0800000000000000
-      internalID: -6378076736128518528
+      spriteID: d7d60d0d9f28e2280800000000000000
+      internalID: -9066164990388441731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magofall_2
+      name: mago_fall_2
       rect:
         serializedVersion: 2
         x: 128
@@ -183,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fd19bbe5647f80f0800000000000000
-      internalID: -1112542601841926666
+      spriteID: a0f99091b66ea8da0800000000000000
+      internalID: -5941683410705998070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magofall_3
+      name: mago_fall_3
       rect:
         serializedVersion: 2
         x: 192
@@ -204,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59fd38fc85e232020800000000000000
-      internalID: 2315745592372092821
+      spriteID: d3068a87f799c3c60800000000000000
+      internalID: 7799277427463053373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magofall_4
+      name: mago_fall_4
       rect:
         serializedVersion: 2
         x: 256
@@ -225,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f29a1b94af84bc4b0800000000000000
-      internalID: -5419157486794856145
+      spriteID: b3ad7b3691132fea0800000000000000
+      internalID: -5840551781629175237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magofall_5
+      name: mago_fall_5
       rect:
         serializedVersion: 2
         x: 320
@@ -246,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 139015d6669135730800000000000000
-      internalID: 3986558022864406833
+      spriteID: dbc0b13effb301830800000000000000
+      internalID: 4039794835964234941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magofall_6
+      name: mago_fall_6
       rect:
         serializedVersion: 2
         x: 0
@@ -267,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7b98dd8a08e005d0800000000000000
-      internalID: -3098221411603801218
+      spriteID: 520279a619705f8b0800000000000000
+      internalID: -5119177080296759259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magofall_7
+      name: mago_fall_7
       rect:
         serializedVersion: 2
         x: 64
@@ -288,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94b1f3ff0fc3a28a0800000000000000
-      internalID: -6329179320543667383
+      spriteID: 1574727b44a097f60800000000000000
+      internalID: 8032462700638848849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magofall_8
+      name: mago_fall_8
       rect:
         serializedVersion: 2
         x: 128
@@ -309,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9d069e9cb6f3a320800000000000000
-      internalID: 2568167502506233244
+      spriteID: 398c53d1a7558f560800000000000000
+      internalID: 7347716775019399315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magofall_9
+      name: mago_fall_9
       rect:
         serializedVersion: 2
         x: 192
@@ -330,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccd341ed2cfd94360800000000000000
-      internalID: 7154495511097261516
+      spriteID: 1deb45eb7f9b3c1c0800000000000000
+      internalID: -4484536330229596463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magofall_10
+      name: mago_fall_10
       rect:
         serializedVersion: 2
         x: 256
@@ -351,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93ea19fec9de506e0800000000000000
-      internalID: -1871828811812590023
+      spriteID: b187c72fa30d60f70800000000000000
+      internalID: 9153232244272035867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magofall_11
+      name: mago_fall_11
       rect:
         serializedVersion: 2
         x: 320
@@ -372,8 +372,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50c9cf628e1f4d340800000000000000
-      internalID: 4887797474992626693
+      spriteID: a63bf582f797ca690800000000000000
+      internalID: -7589557684980960406
       vertices: []
       indices: 
       edges: []
