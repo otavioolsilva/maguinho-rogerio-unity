@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MenuInicial : MonoBehaviour
@@ -8,8 +9,11 @@ public class MenuInicial : MonoBehaviour
     [SerializeField] private GameObject confirmQuitUI;
     public Animator crossfade;
 
+    [SerializeField] private GameObject img_creditos;
+
     void Start ()
     {
+        img_creditos.SetActive(false);
         confirmQuitUI.SetActive(false);
     }
 
@@ -31,16 +35,21 @@ public class MenuInicial : MonoBehaviour
     //Créditos
     public void LoadCreditos ()
     {
-        Debug.Log("load credits");
+        img_creditos.SetActive(true);
+    }
+
+    public void UnloadCreditos ()
+    {
+        img_creditos.SetActive(false);
     }
 
     //Sair
-    public void Quit()
+    public void Quit ()
     {
         confirmQuitUI.SetActive(true);
     }
 
-    public void confirmQuit()
+    public void confirmQuit ()
     {
         Application.Quit();
         Debug.Log("quit");

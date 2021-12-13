@@ -8,6 +8,7 @@ TagManager:
   - Quicksand
   - INT_church
   - Enemy
+  - Orc
   layers:
   - Default
   - TransparentFX

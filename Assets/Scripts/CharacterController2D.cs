@@ -32,6 +32,11 @@ public class CharacterController2D : MonoBehaviour
 
 	private void Update()
 	{
+		if (DataController.life == false) StartCoroutine(LoadGameOver());
+		
+		if (DataController.life_orc <= 0)
+			if(DataController.item_pocao == true) StartCoroutine(LoadWin());
+
 		Attack();
 	}
 
@@ -121,5 +126,15 @@ public class CharacterController2D : MonoBehaviour
 		yield return new WaitForSeconds(1f);
 
 		SceneManager.LoadScene("gameover", LoadSceneMode.Single);
+	}
+
+	//Win
+	IEnumerator LoadWin()
+	{
+		crossfade.SetTrigger("CallStart");
+
+		yield return new WaitForSeconds(1f);
+
+		SceneManager.LoadScene("win", LoadSceneMode.Single);
 	}
 }

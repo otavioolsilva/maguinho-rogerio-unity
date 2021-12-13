@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/lv_final.unity
     guid: cb3291b26aced2d4abe53a8c6ac25255
   - enabled: 1
+    path: Assets/Scenes/win.unity
+    guid: b3eafc7893fc87c409ed601f9962edcf
+  - enabled: 1
     path: Assets/Scenes/gameover.unity
     guid: 13a9c5378b74f0441bdc89113d70511f
   m_configObjects: {}

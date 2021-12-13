@@ -23,6 +23,12 @@ public class Fireball : MonoBehaviour
             Destroy(col.gameObject);
             End();
         }
+
+        if(col.gameObject.tag == "Orc")
+        {
+            DataController.life_orc--;
+            End();
+        }
     }
 
     void End ()

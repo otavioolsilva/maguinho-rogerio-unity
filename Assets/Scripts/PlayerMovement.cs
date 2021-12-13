@@ -19,8 +19,6 @@ public class PlayerMovement : MonoBehaviour {
 	
 	void Update ()
     {
-        if (DataController.life == false) StartCoroutine(controller.LoadGameOver());
-
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
@@ -45,5 +43,12 @@ public class PlayerMovement : MonoBehaviour {
             runSpeed = 0.5f * originalSpeed;
         else
             runSpeed = originalSpeed;
+
+        //Orc
+        if (col.gameObject.tag == "Orc")
+        {
+            runSpeed = 0f;
+            animator.enabled = false;
+        }
     }
 }
