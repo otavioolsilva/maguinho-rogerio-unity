@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class InimigoOrc : MonoBehaviour
 {
     [SerializeField] private float speed_orc = 2;
-    [SerializeField] private float rondaDistancia;
-    private float ronda = 0;
+    [SerializeField] private GameObject flagEsq;
+    [SerializeField] private GameObject flagDir;
 
     [SerializeField] private Animator anim_orc;
 
@@ -19,7 +19,8 @@ public class InimigoOrc : MonoBehaviour
 
     void Update ()
     {
-        Patrulha();
+        //Move
+        transform.Translate(Vector2.right * speed_orc * Time.deltaTime);
 
         //Check vida_orc
         Debug.Log("Vida orc: " + DataController.life_orc);
@@ -32,23 +33,6 @@ public class InimigoOrc : MonoBehaviour
         UpdateHealthBarOrc();
     }
 
-    private void Patrulha ()
-    {
-        ronda++;
-
-        transform.Translate(Vector2.right * speed_orc * Time.deltaTime);
-
-        if (ronda >= 0)
-            transform.localRotation = Quaternion.Euler(0, 180, 0);
-        else
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
-
-        if (ronda > rondaDistancia / 2)
-            ronda = ronda * -1;
-
-        //Debug.Log("ronda = " + ronda);
-    }
-
     void OnCollisionEnter2D (Collision2D col)
     {
         if (col.gameObject.tag == "Player")
@@ -57,6 +41,21 @@ public class InimigoOrc : MonoBehaviour
             DataController.life = false;
             speed_orc = 0;
             anim_orc.enabled = false;
+        }
+    }
+
+    void OnTriggerEnter2D (Collider2D coll)
+    {
+        if (coll.gameObject == flagEsq)
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+            Debug.Log("esq");
+        }
+
+        if (coll.gameObject == flagDir)
+        {
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
+            Debug.Log("dir");
         }
     }
 
